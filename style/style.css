@@ -1,0 +1,198 @@
+@import 'utilities.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: #161616;
+}
+.container1{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+    text-decoration: none;
+}
+header nav .left a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: #00e2ff;
+}
+header nav{
+    padding: 1rem 0;
+}
+.button{
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 2.5rem;
+    padding-right: 1.5rem;
+    font-size: 1rem;
+    font-weight: 525;
+    border: 2px solid transparent;
+    background: #161616;
+    color:#fff;
+    text-transform: uppercase;
+    transition:all 0.3s ease;
+}
+.button:hover{
+    color: #00e2ff;
+}
+.button:focus{
+    outline: none;
+}
+
+.home{
+    background-color: #d6e0f0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.home .inner h1{
+    font-family: Trebuchet MS;
+    font-size: 35px;
+}
+.home .inner img{
+    height: 400px;
+    width: auto;
+}
+.about{
+    background-color: #fbecec;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: table;
+}
+.education{
+    background-color: #fff;
+    text-align: center;
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+.education h1{
+    font-size: 35px;
+    font-family: Trebuchet MS;
+}
+.contact{
+    background-color: #fbf6f0;
+    text-align: center;
+    display: grid;
+    height: 100vh;
+    width: 100%;
+}
+.contact .container{
+    margin: auto;
+}
+.contact h1{
+    font-family: Trebuchet MS;
+}
+.education h2,h3{
+    font-size: 20px;
+    font-family: Trebuchet MS;
+}
+.education .inner div{
+    width: 30%;
+    margin-left: 30px;
+    margin-right: 5px;
+    float: left;
+    text-align: center;
+}
+.education .inner div img{
+    width: 200px;
+    height: auto;
+}
+
+svg,
+svg rect{
+	position: absolute;
+	top: 1rem;
+	left: 73rem;
+	width: 9.6rem;
+	height: 3.4rem;
+	fill: transparent;
+}
+.contact-btn svg rect{
+	stroke: #fff;
+	stroke-width: 3;
+	transition: 2s;
+	stroke-dasharray: 157 52.1;
+	stroke-dashoffset: 212;
+}
+.contact-btn:hover svg rect{
+	stroke: #00e2ff;
+	stroke-dasharray: 65 145;
+	stroke-dashoffset: -120;
+}
+
+/* Responsive Designing */
+@media (min-width:320px) and (max-width:424px){
+    nav ul li{
+        padding-bottom: 4px;
+        padding-left: 1px;
+        padding-right: 7.5px;
+    }
+    .education .inner div h1{
+        font-size: 20px;
+    }
+    .education .inner div img{
+        width: 135px;
+        height: auto;
+    }
+    .education .inner div, .about .inner div{
+        width: 100%;
+    }
+}
+@media (min-width:425px) and (max-width:767px){
+    nav ul li{
+        padding-bottom: 5px;
+        padding-left: 6px;
+        padding-right: 9px;
+    }
+    nav ul{
+        padding: 6px;
+    }
+    .education h1{
+        font-size: 20px;
+    }
+    .education .inner div img{
+        width: 150px;
+        height: auto;
+    }
+    .education .inner div{
+        width: 100%;
+        margin: 0px;
+    }
+    .inner{
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
